@@ -1,7 +1,16 @@
-const name = "Adrian";
-const element = 'Hola yo soy '  + name;
+function generarNombre(persona){
+return persona.genero + " " + persona.nombre;
+}
+
+const persona = {
+  genero : 'Señor',
+  nombre : 'Adrian'
+  };
+
+const elemento = "Hola, yo me llamo " + generarNombre(persona);
+
 
 ReactDOM.render(
-    element,
+  elemento,
   document.getElementById('holamundo')
 );
